@@ -1,0 +1,27 @@
+{% extends "layouts/base.html" %}
+
+{% block contenido %}
+{% load crispy_forms_tags %}
+<main class="container">
+    <section>
+        <h1 class="text-center py-5">Ingresar Nuevo Vehículo.</h1>
+        <hr>
+    </section>
+
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div>
+                        <input type="submit" class="btn btn-primary" value="Ingresar"> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+{% endblock contenido %}

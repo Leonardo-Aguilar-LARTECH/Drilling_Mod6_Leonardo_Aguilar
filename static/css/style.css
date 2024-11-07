@@ -1,0 +1,22 @@
+
+body{
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+main{
+    min-height: 90vh;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    height: 50px;
+}
+
+.contenedor-main{
+    margin-bottom: 60px;
+}

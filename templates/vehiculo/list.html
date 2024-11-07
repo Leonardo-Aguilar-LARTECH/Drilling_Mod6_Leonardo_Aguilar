@@ -1,0 +1,41 @@
+{% extends "layouts/base.html" %}
+
+{% block contenido %}
+
+    <main class="container">
+        <section>
+                <h1 class="text-center py-5">Listado Vehiculos</h1>
+                <hr>
+        </section>
+
+        <section>
+            <table class="table table-hover table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Serial Carroceria</th>
+                        <th scope="col">Serial Motor</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Condicion de precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for vehiculo in vehiculos %}
+                        <tr>
+                            <td>{{vehiculo.marca}}</td>
+                            <td>{{vehiculo.modelo}}</td>
+                            <td>{{vehiculo.serial_carroceria}}</td>
+                            <td>{{vehiculo.serial_motor}}</td>
+                            <td>{{vehiculo.categoria}}</td>
+                            <td>${{vehiculo.precio}}</td>
+                            <td>{{vehiculo.condicion_precio}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+{% endblock  %}

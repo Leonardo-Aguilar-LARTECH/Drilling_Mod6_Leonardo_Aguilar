@@ -1,0 +1,26 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proycto Vehiculos Django</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+    {% bootstrap_messages %}
+    <main class="contenedor-main">
+        {% block contenido %}
+        
+        {% endblock contenido %}
+    </main>
+    <div class="fixed-bottom">
+        {% include "partials/footer.html" %}
+    </div>
+</body>
+</html>
