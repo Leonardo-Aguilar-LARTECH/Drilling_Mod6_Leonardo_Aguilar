@@ -1,9 +1,12 @@
 # INSTRUCCIONES DEL PROYECTO
 
 ## Pasos para iniciar el proyecto:
+1.-Clonar Proyecto
+```
+git clone https://github.com/Leonardo-Aguilar-LARTECH/Drilling_Mod6_Leonardo_Aguilar.git
+```
 
-
-1.- Instalar las dependencias desde requirements.txt usando el comando...
+2.- Instalar las dependencias desde requirements.txt usando el comando...
 ```
 pip install -r requirements.txt
 ```
